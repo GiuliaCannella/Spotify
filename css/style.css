@@ -10,16 +10,60 @@
     --sidebar-width:25%;
     --sidebar-height: 80vh;
     --footer-height: 20vh;
+    --header-background: rgba(0, 0, 0, 0.3);
+    --sidebar-background: #000000;
+    --footer-background: #282828;
+    --main-background: #212121;
+    --color-gray: #727373;
+    --color-white: white;
+    --color-green: #adff2f;
 }
+
+/* utility */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* fine utility */
 
 .navbar-container {
     width: var(--header-width);
     height: var(--header-height);
-    background-color: red;
+    background-color: var(--header-background);
     position: fixed;
     top: 0;
     right: 0;
     z-index: 9999;
+}
+
+.btn {
+    color: var(--color-white);
+    background-color:transparent;
+   border:1px solid var(--color-white);
+   border-radius: 2em;
+   padding: 1em 2em;
+   margin-right: 1em;
+   font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--color-white);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .sidebar {
