@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 80px;
+    --header-width: 75%;
+    --sidebar-width:25%;
+    --sidebar-height: 80vh;
+    --footer-height: 20vh;
+}
+
+.navbar-container {
+    width: var(--header-width);
+    height: var(--header-height);
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    height: var(--sidebar-height);
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main {
+    width: var(--header-width);
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    height: calc(100% - var(--footer-height));
+    max-height: calc(100% - var(--footer-height));
+}
+
+.main .container-main {
+    overflow-y: auto;
+    margin-top: var(--header-height);
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: var(--footer-height);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: violet;
+
+}
+
