@@ -25,6 +25,10 @@
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .justify-content-end {
     justify-content: end;
 }
@@ -37,7 +41,46 @@
     align-items: center;
 }
 
-/* fine utility */
+.w-5 {
+    width: 5%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+
+.w-20{
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40{
+width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.h-20{
+    height: 20%;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-gray {
+    color: var(--color-gray);
+}
+
+/* FINE UTILITY */
+ 
+/* HEADER */
 
 .navbar-container {
     width: var(--header-width);
@@ -65,15 +108,100 @@
     cursor: pointer;
     transition: 0.5s;
 }
+ /* SIDEBAR */
 
 .sidebar {
     width: var(--sidebar-width);
     height: var(--sidebar-height);
-    background-color: yellow;
+    background-color: var(--sidebar-background);
     position: fixed;
     top: 0;
     left: 0;
 }
+
+.sidebar .logo {
+    height: var(--header-height);
+    margin-left: 1em;
+}
+
+
+.container-menu {
+    width:calc(100 - var(--sidebar-width)) ;
+    height:130px ;
+    
+}
+
+.container-menu ul li {
+    margin-left:  1em;
+    margin-bottom: 0.7em;
+    
+
+}
+
+.container-menu ul li:hover{
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.container-menu ul li img {
+    margin-right: 1em;
+}
+
+.container-second-sidebar {
+    width:calc(100 - var(--sidebar-width)) ;
+    height:100px ;
+}
+
+.container-second-sidebar h1 {
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    color: var(--color-white);
+    margin-bottom: 0.5em;
+}
+
+.container-second-sidebar i {
+    font-size: 4em;
+    margin-left: 0.2em;
+    color: var(--color-gray);
+}      
+
+.container-second-sidebar h2 {
+    margin-left: 0.5em;
+    color: var(--color-gray);
+    font-size: 1em;
+}
+
+.container-second-sidebar h2:hover{
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.container-terzo-sidebar {
+    width:calc(100 - var(--sidebar-width)) ;
+    height:140px ;
+}
+
+.container-terzo-sidebar ul li {
+    margin-top: 1em;
+    margin-left: 1em;
+    list-style: none;
+    font-weight: bold;
+    color: var(--color-gray);
+    font-size: 1em;
+}
+
+.container-terzo-sidebar ul li:hover{
+    colo
+}
+
+.container-terzo-sidebar ul {
+    overflow-y: scroll;
+}
+
+
+
+/* MAIN */
+
 
 .main {
     width: var(--header-width);
