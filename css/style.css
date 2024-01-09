@@ -267,8 +267,69 @@ width: 40%;
 
 }
 
+.footer-colonna1 {
+    width: 20%;
+    height: 100%;
+    }
 
-.footer .img {
-   padding: 1em 2em;
-   width: 40px;
+
+.footer-colonna1 img {
+    margin-left: 1em;
 }
+
+.footer-colonna1 .brano {
+    margin-left: 0.5em;
+}
+
+.footer-colonna1 .titolo-brano {
+    color: var(--color-white);
+    font-size: 1em;
+    font-weight:bold;
+}
+
+.footer-colonna1 .brano-nome {
+    color: var(--color-gray);
+    font-size: 0.5em;
+} 
+
+.footer-colonna1 .icon {
+    margin-left: 1em;
+}
+
+.footer-colonna1 .icon i {
+    margin-left: 0.5em;
+    color: var(--color-gray);
+   
+}
+
+.footer-colonna1 .icon i:hover {
+    color: var(--color-white);
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.footer-colonna2 {
+    width: 60%;
+    background-color: yellow;
+}
+
+.footer-colonna2 .action {
+    color: var(--color-white);
+    font-size: 1em;
+    
+
+} 
+
+.footer-colonna2 .action ul {
+    list-style: none;
+}
+
+
+.footer-colonna2 .action li {
+    padding: 1em;
+}
+.footer-colonna3 {
+    width: 20%;
+    background-color:pink;
+}
+
